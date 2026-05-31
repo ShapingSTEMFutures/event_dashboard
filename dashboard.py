@@ -79,7 +79,7 @@ with col_left:
         plot_bgcolor="white", paper_bgcolor="white",
         font_family="DM Sans", title_font_size=16,
         legend=dict(orientation="h", yanchor="bottom", y=1.02),
-        margin=dict(t=60, b=20)
+        margin=dict(t=60, b=20),
         xaxis=dict(tickmode='linear', dtick=1, tickformat='d')
     )
     st.plotly_chart(fig_grouped, use_container_width=True)
@@ -104,7 +104,7 @@ with col_right:
         font_family="DM Sans", title_font_size=16,
         yaxis=dict(range=[70, 100]),
         legend=dict(orientation="h", yanchor="bottom", y=1.02),
-        margin=dict(t=60, b=20)
+        margin=dict(t=60, b=20),
         xaxis=dict(tickmode='linear', dtick=1, tickformat='d')
     )
     st.plotly_chart(fig_sat, use_container_width=True)
@@ -117,7 +117,7 @@ fig_total = px.line(
 fig_total.update_traces(line_color="#2d7a5f", marker=dict(size=10, color="#2d7a5f"))
 fig_total.update_layout(
     plot_bgcolor="white", paper_bgcolor="white",
-    font_family="DM Sans", title_font_size=16, margin=dict(t=50, b=20)
+    font_family="DM Sans", title_font_size=16, margin=dict(t=50, b=20),
     xaxis=dict(tickmode='linear', dtick=1, tickformat='d')
 )
 st.plotly_chart(fig_total, use_container_width=True)
