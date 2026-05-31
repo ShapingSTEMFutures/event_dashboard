@@ -44,7 +44,7 @@ df_annual = pd.read_excel(EXCEL_FILE, sheet_name="Annual")
 
 # ─── Header ───────────────────────────────────────────────────────────────────
 st.title("Shaping STEM Futures")
-st.markdown("#### Event Registration Dashboard")
+st.markdown("#### Registration & Satisfaction Dashboard")
 st.markdown("---")
 
 # ─── SECTION 1: Annual overview ───────────────────────────────────────────────
