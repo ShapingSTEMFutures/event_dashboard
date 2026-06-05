@@ -79,7 +79,7 @@ with col_left:
         plot_bgcolor="white", paper_bgcolor="white",
         font_family="DM Sans", title_font_size=16,
         legend=dict(orientation="h", yanchor="bottom", y=1.02),
-        margin=dict(t=60, b=20),
+        margin=dict(t=80, b=20),
         xaxis=dict(tickmode='linear', dtick=1, tickformat='d')
     )
     st.plotly_chart(fig_grouped, use_container_width=True)
